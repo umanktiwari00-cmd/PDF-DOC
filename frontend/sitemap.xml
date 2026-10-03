@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://pdf-doc-frontend.vercel.app/</loc>
+    </url>
+
+    <!-- PDF Tools -->
+    <url>
+        <loc>https://pdf-doc-frontend.vercel.app/pdf-text.html</loc>
+    </url>
+
+    <url>
+        <loc>https://pdf-doc-frontend.vercel.app/pdf-word.html</loc>
+    </url>
+
+    <url>
+        <loc>https://pdf-doc-frontend.vercel.app/pdf-excel.html</loc>
+    </url>
+
+    <url>
+        <loc>https://pdf-doc-frontend.vercel.app/pdf-ppt.html</loc>
+    </url>
+
+    <url>
+        <loc>https://pdf-doc-frontend.vercel.app/pdf-image.html</loc>
+    </url>
+
+    <url>
+        <loc>https://pdf-doc-frontend.vercel.app/merge-pdf.html</loc>
+    </url>
+
+    <url>
+        <loc>https://pdf-doc-frontend.vercel.app/split-pdf.html</loc>
+    </url>
+
+</urlset>
