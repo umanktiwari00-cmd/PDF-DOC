@@ -1,13 +1,12 @@
 "use strict";
 
-
 // ============================================================
 // PDFDOC CONFIGURATION
 // ============================================================
 
 const PDFDOC_CONFIG = {
 
-    API_URL: "http://127.0.0.1:8000/convert/",
+    API_URL: "https://pdf-doc-production.up.railway.app/convert/",
 
     MAX_FILE_SIZE: 50 * 1024 * 1024,
 
@@ -1354,6 +1353,7 @@ function initializeHomepage() {
 
                 conversionButton.textContent =
                     `Convert ${fromFormat} to ${toFormat}`;
+
             }
 
         }
@@ -1375,6 +1375,7 @@ function initializeHomepage() {
             ) {
 
                 closeDropdowns();
+
             }
 
         }
@@ -1724,6 +1725,7 @@ function initializeToolPage() {
 
                 convertButton.textContent =
                     `Convert to ${toFormat}`;
+
             }
 
         }
