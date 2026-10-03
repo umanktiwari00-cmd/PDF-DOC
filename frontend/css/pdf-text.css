@@ -1,0 +1,421 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2937;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+
+    padding: 90px 20px 70px;
+
+    background-color: white;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #6b7280;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TOOLS SECTION
+========================= */
+
+.tools-section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   TOOLS CONTAINER
+========================= */
+
+.tools-container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   TOOL CARD
+========================= */
+
+.tool-card {
+    min-height: 240px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #2563eb;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   TOOL TITLE
+========================= */
+
+.tool-title {
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   TOOL DESCRIPTION
+========================= */
+
+.tool-description {
+    color: #6b7280;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   TOOL BUTTON
+========================= */
+
+.tool-button {
+    margin-top: auto;
+
+    width: 100%;
+
+    padding: 12px;
+
+    text-align: center;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    transition: background-color 0.2s ease;
+}
+
+.tool-card:hover .tool-button {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.about-description {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: #6b7280;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #111827;
+
+    color: #9ca3af;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+
+/* =========================
+   PDF TOOL PAGE
+========================= */
+
+.pdf-tool {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.pdf-tool-title {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.pdf-tool-description {
+    color: #6b7280;
+
+    margin-bottom: 40px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   UPLOAD BOX
+========================= */
+
+.upload-box {
+    width: 100%;
+
+    padding: 50px 30px;
+
+    background-color: white;
+
+    border: 2px dashed #d1d5db;
+
+    border-radius: 16px;
+
+    margin-bottom: 25px;
+}
+
+#pdf-file {
+    margin-bottom: 20px;
+
+    max-width: 100%;
+}
+
+#file-name {
+    color: #6b7280;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+#convert-button,
+#download-button {
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#convert-button:hover,
+#download-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result-box {
+    margin-top: 30px;
+}
+
+#status {
+    margin-bottom: 15px;
+
+    color: #374151;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .tools-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .tools-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-card {
+        min-height: 220px;
+    }
+
+    .pdf-tool {
+        padding: 60px 15px;
+    }
+
+    .pdf-tool-title {
+        font-size: 32px;
+    }
+
+    .upload-box {
+        padding: 35px 15px;
+    }
+
+}

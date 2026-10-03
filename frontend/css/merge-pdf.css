@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #2563eb;
+}
+
+
+/* PDF Tool */
+
+.pdf-tool {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.pdf-tool-title {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.pdf-tool-description {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+
+/* Upload Box */
+
+.upload-box {
+    background-color: white;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 45px 20px;
+    margin-bottom: 25px;
+}
+
+.upload-box input {
+    font-size: 16px;
+}
+
+#file-name {
+    margin-top: 15px;
+    color: #6b7280;
+}
+
+
+/* Merge Button */
+
+#merge-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#merge-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Result */
+
+.result-box {
+    margin-top: 30px;
+}
+
+#status {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+#download-button {
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#download-button:hover {
+    background-color: #15803d;
+}

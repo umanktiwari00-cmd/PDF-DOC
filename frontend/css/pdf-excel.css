@@ -1,0 +1,247 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2937;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   PDF TOOL
+========================= */
+
+.pdf-tool {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.pdf-tool-title {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.pdf-tool-description {
+    color: #6b7280;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   UPLOAD BOX
+========================= */
+
+.upload-box {
+    width: 100%;
+
+    padding: 60px 30px;
+
+    background-color: white;
+
+    border: 2px dashed #d1d5db;
+    border-radius: 16px;
+
+    margin-bottom: 25px;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.upload-box:hover {
+    border-color: #2563eb;
+    background-color: #fafcff;
+}
+
+
+/* =========================
+   FILE INPUT
+========================= */
+
+#pdf-file {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+#file-name {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================
+   CONVERT BUTTON
+========================= */
+
+#convert-button {
+    padding: 13px 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+#convert-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result-box {
+    margin-top: 35px;
+}
+
+#status {
+    margin-bottom: 18px;
+    color: #374151;
+    font-size: 16px;
+}
+
+
+/* =========================
+   DOWNLOAD BUTTON
+========================= */
+
+#download-button {
+    padding: 13px 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #16a34a;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+#download-button:hover {
+    background-color: #15803d;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .pdf-tool {
+        padding: 60px 15px;
+    }
+
+    .pdf-tool-title {
+        font-size: 32px;
+    }
+
+    .pdf-tool-description {
+        font-size: 16px;
+    }
+
+    .upload-box {
+        padding: 40px 15px;
+    }
+
+    #pdf-file {
+        width: 100%;
+    }
+}

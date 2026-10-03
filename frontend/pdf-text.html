@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>PDFDOC</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="64x64"
+        href="pdfdoc-favicon.png?v=2">
+
+   <link rel="stylesheet" href="css/pdf-text.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <h1 class="logo">PDFDOC</h1>
+
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#tools" class="nav-link">Tools</a>
+            <a href="index.html#about" class="nav-link">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- PDF to Text -->
+    <main class="pdf-tool">
+
+        <h2 class="pdf-tool-title">
+            PDF to Text
+        </h2>
+
+        <p class="pdf-tool-description">
+            Extract text from your PDF files.
+        </p>
+
+
+        <!-- Upload -->
+        <div class="upload-box">
+
+            <input
+                type="file"
+                id="pdf-file"
+                accept=".pdf"
+            >
+
+            <p id="file-name">
+                No file selected
+            </p>
+
+        </div>
+
+
+        <!-- Convert -->
+        <button id="convert-button">
+            Convert to Text
+        </button>
+
+
+        <!-- Result -->
+        <div class="result-box">
+
+            <p id="status"></p>
+
+            <button id="download-button" hidden>
+                Download Text
+            </button>
+
+        </div>
+
+    </main>
+
+
+   <script src="js/app.js"></script>
+
+</body>
+
+</html>

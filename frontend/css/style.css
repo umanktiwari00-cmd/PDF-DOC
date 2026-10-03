@@ -1,0 +1,1145 @@
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f8fafc;
+
+    color: #172033;
+
+    min-height: 100vh;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    width: 100%;
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 60px;
+
+    background-color: white;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 2000;
+}
+
+
+/* =====================================================
+   BRAND / LOGO
+===================================================== */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    height: 52px;
+
+    text-decoration: none;
+}
+
+
+.brand-logo {
+    width: 155px;
+
+    height: 52px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =====================================================
+   NAVIGATION LINKS
+===================================================== */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+}
+
+
+.nav-link {
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+
+.nav-link:hover {
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 90px 24px 60px;
+
+    text-align: center;
+}
+
+
+.hero-title {
+    font-size: 52px;
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-description {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   CONVERTER SECTION
+===================================================== */
+
+.converter-section {
+    width: 100%;
+
+    padding: 20px 24px 80px;
+}
+
+
+.converter-container {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+
+.converter-title {
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.converter-description {
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   FORMAT SELECTORS
+===================================================== */
+
+.format-selectors {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 16px;
+}
+
+
+.format-selector {
+    position: relative;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.format-label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #475569;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   FORMAT BUTTON
+===================================================== */
+
+.format-button {
+    width: 100%;
+
+    height: 54px;
+
+    padding: 0 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: white;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    color: #172033;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.format-button:hover {
+    border-color: #2563eb;
+}
+
+
+.format-button:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+.dropdown-arrow {
+    font-size: 18px;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   CUSTOM DROPDOWN
+===================================================== */
+
+.format-dropdown {
+    position: absolute;
+
+    top: 88px;
+
+    left: 0;
+
+    width: 100%;
+
+    background-color: white;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+
+    padding: 10px;
+
+    z-index: 1000;
+
+    display: none;
+}
+
+
+.format-dropdown.active {
+    display: block;
+}
+
+
+/* =====================================================
+   DROPDOWN SEARCH
+===================================================== */
+
+.format-search {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    height: 45px;
+
+    padding: 0 12px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+
+    gap: 8px;
+}
+
+
+.format-search input {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 14px;
+
+    color: #172033;
+}
+
+
+.format-search input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* =====================================================
+   FORMAT LIST
+===================================================== */
+
+.format-list {
+    max-height: 220px;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    padding-right: 3px;
+}
+
+
+/* =====================================================
+   FORMAT OPTION
+===================================================== */
+
+.format-option {
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    color: #334155;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+
+.format-option:hover {
+    background-color: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.format-option.keyboard-selected {
+    background-color: #dbeafe;
+
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   NO RESULTS
+===================================================== */
+
+.no-format-message {
+    padding: 12px 8px;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   SWAP BUTTON
+===================================================== */
+
+.swap-button {
+    width: 46px;
+
+    height: 46px;
+
+    flex-shrink: 0;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    color: #2563eb;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.swap-button:hover {
+    background-color: #eff6ff;
+
+    border-color: #2563eb;
+
+    transform: rotate(180deg);
+}
+
+
+/* =====================================================
+   CONVERSION MESSAGE
+===================================================== */
+
+.conversion-message {
+    text-align: center;
+
+    margin-top: 22px;
+
+    margin-bottom: 22px;
+
+    font-size: 14px;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   UPLOAD AREA
+===================================================== */
+
+.upload-area {
+    width: 100%;
+
+    min-height: 250px;
+
+    margin-top: 10px;
+
+    padding: 35px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #f8fafc;
+
+    border: 2px dashed #cbd5e1;
+
+    border-radius: 16px;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.upload-area:hover {
+    border-color: #2563eb;
+
+    background-color: #eff6ff;
+}
+
+
+/* =====================================================
+   UPLOAD ICON
+===================================================== */
+
+.upload-icon {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   UPLOAD TITLE
+===================================================== */
+
+.upload-title {
+    font-size: 20px;
+
+    font-weight: 600;
+
+    color: #172033;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   UPLOAD DESCRIPTION
+===================================================== */
+
+.upload-description {
+    font-size: 14px;
+
+    color: #64748b;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   UPLOAD BUTTON
+===================================================== */
+
+.upload-button {
+    padding: 11px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.upload-button:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   SELECTED FILE
+===================================================== */
+
+.selected-file {
+    max-width: 100%;
+
+    margin-top: 16px;
+
+    font-size: 14px;
+
+    color: #475569;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =====================================================
+   CONVERSION BUTTON
+===================================================== */
+
+.conversion-button {
+    width: 100%;
+
+    height: 54px;
+
+    margin-top: 24px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.conversion-button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+.conversion-button:disabled {
+    background-color: #94a3b8;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =====================================================
+   TOOLS SECTION
+===================================================== */
+
+.tools-section {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 80px 24px;
+
+    box-sizing: border-box;
+}
+
+
+.section-title {
+    text-align: center;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+
+    margin-bottom: 16px;
+}
+
+
+.section-description {
+    text-align: center;
+
+    font-size: 18px;
+
+    color: #64748b;
+
+    margin-bottom: 40px;
+}
+
+
+/* =====================================================
+   TOOLS GRID
+===================================================== */
+
+.tools-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   TOOL CARD
+===================================================== */
+
+.tool-card {
+    display: block;
+
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    color: #172033;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.tool-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   TOOL ICON
+===================================================== */
+
+.tool-icon {
+    font-size: 32px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   TOOL TITLE
+===================================================== */
+
+.tool-card h3 {
+    margin: 0 0 10px 0;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    color: #172033;
+}
+
+
+/* =====================================================
+   TOOL DESCRIPTION
+===================================================== */
+
+.tool-card p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+
+.about-section {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 80px 24px 100px;
+
+    text-align: center;
+}
+
+
+.about-description {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    width: 100%;
+
+    padding: 28px 24px;
+
+    text-align: center;
+
+    background-color: #172033;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   DROPDOWN SCROLLBAR
+===================================================== */
+
+.format-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+.format-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+.format-list::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+
+    border-radius: 10px;
+}
+
+
+.format-list::-webkit-scrollbar-thumb:hover {
+    background-color: #94a3b8;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+
+    .brand-logo {
+        width: 140px;
+
+        height: 48px;
+    }
+
+
+    .hero {
+        padding-top: 70px;
+    }
+
+
+    .hero-title {
+        font-size: 44px;
+    }
+
+
+    .converter-container {
+        padding: 30px;
+    }
+
+
+    .tools-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+
+        min-height: 65px;
+
+        padding: 12px 20px;
+
+        gap: 15px;
+    }
+
+
+    .brand {
+        height: 44px;
+    }
+
+
+    .brand-logo {
+        width: 125px;
+
+        height: 44px;
+    }
+
+
+    .nav-links {
+        gap: 15px;
+    }
+
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    .hero {
+        padding:
+            60px 20px
+            40px;
+    }
+
+
+    .hero-title {
+        font-size: 36px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+
+    .converter-section {
+        padding:
+            10px 16px
+            60px;
+    }
+
+
+    .converter-container {
+        padding: 24px 18px;
+
+        border-radius: 16px;
+    }
+
+
+    .converter-title {
+        font-size: 27px;
+    }
+
+
+    .format-selectors {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+
+    .format-selector {
+        width: 100%;
+    }
+
+
+    .swap-button {
+        align-self: center;
+
+        transform: rotate(90deg);
+    }
+
+
+    .swap-button:hover {
+        transform: rotate(270deg);
+    }
+
+
+    .format-dropdown {
+        top: 88px;
+    }
+
+
+    .upload-area {
+        min-height: 220px;
+
+        padding: 25px 16px;
+    }
+
+
+    .tools-section {
+        padding:
+            60px 16px;
+    }
+
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .section-title {
+        font-size: 30px;
+    }
+
+
+    .section-description {
+        font-size: 16px;
+    }
+
+
+    .tool-card {
+        padding: 24px;
+    }
+
+
+    .about-section {
+        padding:
+            60px 20px
+            80px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL SCREENS
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+
+    .brand-logo {
+        width: 110px;
+
+        height: 40px;
+    }
+
+
+    .nav-links {
+        gap: 10px;
+    }
+
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+
+    .hero-title {
+        font-size: 31px;
+    }
+
+
+    .converter-title {
+        font-size: 24px;
+    }
+
+}
