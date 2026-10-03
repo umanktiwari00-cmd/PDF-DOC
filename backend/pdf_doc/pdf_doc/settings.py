@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-agt^lgour*!##i@t%dizkvvmbszzd^0sd(_uxca1ppthzn1ltr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "pdf-doc-production.up.railway.app",
+]
 
 
 # Application definition
@@ -131,12 +133,14 @@ MAILERS = {
 
 
 # CSRF
+
 CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:5500",
 ]
 
 
 # CORS
+
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
 ]
